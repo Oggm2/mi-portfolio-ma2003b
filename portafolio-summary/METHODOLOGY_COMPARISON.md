@@ -1,0 +1,1 @@
+Tabla comparativa de los tres métodos
