@@ -1,6 +1,6 @@
 # Retail Customer Behavioral Data Dictionary
 
-**MegaMart Retail – Customer Analytics Dataset** :contentReference[oaicite:0]{index=0}  
+**MegaMart Retail – Customer Analytics Dataset**
 
 - **File:** `retail_customer_data.csv`  
 - **Observations:** 3,000 active customers  
@@ -18,7 +18,6 @@
 |-------------|--------|-------|---------------------------------|---------------------------|
 | `customer_id` | String | –     | Unique customer identifier      | `CUST_0001` to `CUST_3000` |
 
-:contentReference[oaicite:1]{index=1}  
 
 ---
 
@@ -31,7 +30,6 @@
 | `total_spend`          | Float  | –         | Total spending over 12-month period                   | Highly right-skewed; mean ≈ 1,280, range up to ~9,000 |
 | `recency_days`         | Integer| 1–90      | Days since last purchase (lower = more recent)        | Negatively correlated with `monthly_transactions`   |
 
-:contentReference[oaicite:2]{index=2}  
 
 ---
 
@@ -43,8 +41,6 @@
 | `email_open_rate`       | Float | 0.00–0.95 | Proportion of marketing emails opened            | Varies widely (0% to very high engagement)   |
 | `product_views_per_visit` | Float | 3.0–65.0 | Average number of products viewed per session     | Positively correlated with session duration  |
 
-:contentReference[oaicite:3]{index=3}  
-
 ---
 
 ### Loyalty and Satisfaction Indicators
@@ -53,8 +49,7 @@
 |---------------------------|---------|----------|-------------------------------------------------|------------------------------------------------------|
 | `return_rate`             | Float   | 0.00–0.50| Proportion of purchases returned/exchanged      | Right-skewed; most < 15%, some > 30%                 |
 | `customer_tenure_months`  | Integer | 1–48     | Months since first purchase (customer “age”)    | Used to distinguish new vs. long-term customers      |
-
-:contentReference[oaicite:4]{index=4}  
+ 
 
 ---
 
@@ -66,7 +61,6 @@
 - **Data Quality:** All 3,000 observations have complete information across all 10 variables.  
 - **Outliers:** Some extreme values (e.g., very high spenders, very frequent shoppers). These are **legitimate** behaviors, not data errors.  
 
-:contentReference[oaicite:5]{index=5}  
 
 ### Variable Distributions
 
@@ -76,7 +70,6 @@
 - **Email Engagement:** Varies widely (some customers never open emails, others are highly engaged).  
 - **Return Rate:** Right-skewed (most customers have low return rates < 15%; some > 30%).  
 
-:contentReference[oaicite:6]{index=6}  
 
 ---
 
@@ -84,7 +77,7 @@
 
 > Note for Instructors: The dataset contains 5 underlying customer behavioral patterns, though students are **not** told this.
 
-Expected natural segments include: :contentReference[oaicite:7]{index=7}  
+Expected natural segments include:
 
 1. **High-Value Loyalists**  
    - High spend, frequent transactions, low return rate, high engagement.  
@@ -110,7 +103,6 @@ Students may discover **3–6 clusters** depending on methodology. Full credit s
 - **Measurement Scales:** Variables on different scales (dollars, counts, rates) – **standardization is critical**.  
 - **Expected Separation:** Clear behavioral differences exist between segments.  
 
-:contentReference[oaicite:8]{index=8}  
 
 ---
 
@@ -129,7 +121,6 @@ Students may discover **3–6 clusters** depending on methodology. Full credit s
    - Outliers are legitimate customer behaviors – do **not** remove them.  
    - Be aware they may influence cluster centroids.  
 
-:contentReference[oaicite:9]{index=9}  
 
 ---
 
@@ -163,8 +154,7 @@ Students may discover **3–6 clusters** depending on methodology. Full credit s
    - PCA projection to 2D for cluster visualization.  
    - Heatmaps showing cluster profiles across variables.  
    - Silhouette plots showing cohesion within clusters.  
-
-:contentReference[oaicite:10]{index=10}  
+ 
 
 ---
 
@@ -176,7 +166,6 @@ Students may discover **3–6 clusters** depending on methodology. Full credit s
   - Cosine similarity (better for text/sparse data).  
   - Hamming distance (for categorical data).  
 
-:contentReference[oaicite:11]{index=11}  
 
 ---
 
@@ -189,7 +178,6 @@ Students may discover **3–6 clusters** depending on methodology. Full credit s
 - **Return Rates:** 10–15% normal (higher for apparel, lower for electronics).  
 - **Customer Lifetime Value:** Top 20% of customers typically generate 60–80% of revenue.  
 
-:contentReference[oaicite:12]{index=12}  
 
 ### Retail Segmentation Best Practices
 
@@ -198,11 +186,10 @@ Students may discover **3–6 clusters** depending on methodology. Full credit s
 - **Stability:** Segments should be relatively stable over time (not change dramatically month-to-month).  
 - **Profitability:** Consider segment value – high-spend segments warrant more investment.  
 
-:contentReference[oaicite:13]{index=13}  
 
 ### Marketing Strategy Frameworks
 
-Students should consider segment-specific strategies across: :contentReference[oaicite:14]{index=14}  
+Students should consider segment-specific strategies across: 
 
 1. **Product:** Which products to promote to each segment.  
 2. **Price:** Discount sensitivity and promotional strategies.  
@@ -219,7 +206,6 @@ Students should consider segment-specific strategies across: :contentReference[o
 - **Header:** First row contains variable names  
 - **Index:** No row index included (use `customer_id` as primary key)  
 
-:contentReference[oaicite:15]{index=15}  
 
 ---
 
@@ -238,7 +224,6 @@ Students should consider segment-specific strategies across: :contentReference[o
   - Occasional buyers (infrequent but deliberate purchases).  
   - New/Emerging customers (recent, still exploring).  
 
-:contentReference[oaicite:16]{index=16}  
 
 ### Grading Considerations
 
@@ -257,13 +242,12 @@ Common student errors:
 - Creating too many clusters (*k* > 7) that are not actionable.  
 - Ignoring silhouette scores that indicate poor clustering quality.  
 
-:contentReference[oaicite:17]{index=17}  
 
 ---
 
 ## Instructor Reference: Data Generation Details
 
-**Synthetic Data Structure** :contentReference[oaicite:18]{index=18}  
+**Synthetic Data Structure**  
 
 - Generated from 5 multivariate normal distributions with distinct means and covariance matrices.  
 - Cluster proportions:  
@@ -294,5 +278,4 @@ Common student errors:
 - K-means should achieve ARI > 0.90 with *k* = 5.  
 
 > Note: This dataset is synthetically generated for educational purposes. All customer identifiers and behavioral data are fictional but based on realistic retail industry patterns and customer segmentation research. The structure was designed to reward rigorous analysis while allowing flexibility in cluster interpretation.  
-
-:contentReference[oaicite:19]{index=19}  
+ 
