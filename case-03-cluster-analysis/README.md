@@ -91,10 +91,9 @@ All 9 features are **numeric and continuous**, with **no missing values**, which
 - The **average silhouette score** for the final K-Means model with 4 clusters is **~0.32**, indicating **moderate but meaningful separation**, with particularly well-defined Loyal and New/Casual clusters.  
 - **PCA visualization** (PC1 + PC2 explaining ~62% of the variance) confirms that clusters are distinguishable in a lower-dimensional space, especially the high-value Loyal segment vs. lower-value segments.
 
-### 4.2 Highlight visualization (embedded image)
+### 4.2 Highlight visualization
 
-
-![PCA of Customer Clusters](.\images\silhouette_plot.png)
+![Silhouette Plot](./images/silhouette_plot.png)
 
 ### 4.3 Model performance metrics
 
