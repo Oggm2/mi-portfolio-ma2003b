@@ -94,7 +94,8 @@ Examples of the satisfaction items analyzed:
 
 The dataset contains **low missingness (<1%)**, handled with mean imputation using `SimpleImputer`.
 
-**Link to data dictionary**  
+**Link to data dictionary**
+[Data Dictionary](data/DATA_DICTIONARY.md) 
 
 
 ---
