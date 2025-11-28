@@ -13,94 +13,96 @@ Across the three cases, this portfolio highlights the process of:
 
 Each case includes full documentation, reproducible notebooks, and executive-level summaries. The work is implemented in Python, using standard machine learning and statistical libraries such as pandas, numpy, scikit-learn, factor_analyzer, scipy, and matplotlib.
 
-• Badges de GitHub (status, language, license)
+• GitHub Badges (status, language, license)
 
-## Información del equipo 
-Armando Atanasio Navarrete Yepez - 
-Helena Eridani Escandon Lopez - 
+## Team Information
+Armando Atanasio Navarrete Yepez - A01658529
+Helena Eridani Escandon Lopez - A01659511
 Ofelia Gabriela Góngora Méndez - A01666131
 
-## Tabla de contenidos navegable 
-- **Información del equipo:** [Información del equipo](#información-del-equipo)
-- **Resumen de casos de estudio:** [Resumen de casos de estudio](#resumen-de-casos-de-estudio)
-- **Instrucciones de reproducibilidad:** [Instrucciones de reproducibilidad](#instrucciones-de-reproducibilidad)
-- **Estructura del repositorio:** [Estructura del repositorio](#estructura-del-repositorio)
-- **Casos de estudio:**
-	- [Caso 01 — Factor Analysis](case-01-factor-analysis/README.md)
-	- [Caso 02 — Discriminant Analysis](case-02-discriminant-analysis/README.md)
-	- [Caso 03 — Cluster Analysis](case-03-cluster-analysis/README.md)
+## Table of Contents
+- **Team Information:** [Team Information](#team-information)
+- **Case Study Summary:** [Case Study Summary](#case-study-summary)
+- **Reproducibility Instructions:** [Reproducibility Instructions](#reproducibility-instructions)
+- **Repository Structure:** [Repository Structure](#repository-structure)
+- **Case Studies:**
+	- [Case 01 — Factor Analysis](case-01-factor-analysis/README.md)
+	- [Case 02 — Discriminant Analysis](case-02-discriminant-analysis/README.md)
+	- [Case 03 — Cluster Analysis](case-03-cluster-analysis/README.md)
 
-## Resumen de casos de estudio
-| Caso | Método | Pregunta de negocio | Hallazgo clave (1 oración) | Link al caso |
+## Case Study Summary
+| Case | Method | Business Question | Key Finding (1 sentence) | Link to Case |
 |---|---|---|---|---|
-| TechnoServe Customer Satisfaction | Factor Analysis | What latent dimensions drive customer satisfaction and renewal? | 5 latent factors explain ~60% of variance; Technical Excellence is the strongest predictor. | [Caso 01 — Factor Analysis](case-01-factor-analysis/README.md) |
-|LendSmart Credit Risk | Discriminant Analysis | How can we classify loan applicants into risk categories? | Perfect separation; LDA achieves AUC = 1.0, credit score is the top predictor. | [Caso 02 — Discriminant Analysis](case-02-discriminant-analysis/README.md) |
-| MegaMart Customer Segmentation | Cluster Analysis | What natural customer segments exist in the database? | 4 clusters found; “Loyal Customers” represent 18% but drive 45% of revenue. | [Caso 03 — Cluster Analysis](case-03-cluster-analysis/README.md) |
+| TechnoServe Customer Satisfaction | Factor Analysis | What latent dimensions drive customer satisfaction and renewal? | 5 latent factors explain ~60% of variance; Technical Excellence is the strongest predictor. | [Case 01 — Factor Analysis](case-01-factor-analysis/README.md) |
+|LendSmart Credit Risk | Discriminant Analysis | How can we classify loan applicants into risk categories? | Perfect separation; LDA achieves AUC = 1.0, credit score is the top predictor. | [Case 02 — Discriminant Analysis](case-02-discriminant-analysis/README.md) |
+| MegaMart Customer Segmentation | Cluster Analysis | What natural customer segments exist in the database? | 4 clusters found; "Loyal Customers" represent 18% but drive 45% of revenue. | [Case 03 — Cluster Analysis](case-03-cluster-analysis/README.md) |
+
+Fill in the _Business Question_ and _Key Finding_ columns with the corresponding content from each case.
 
 
-## Instrucciones de reproducibilidad 
+## Reproducibility Instructions
 
-Estas instrucciones permiten reproducir los análisis y ejecutar los notebooks en un entorno Windows (PowerShell). Las rutas son relativas a la raíz del repositorio.
+These instructions allow you to reproduce the analyses and run the notebooks in a Windows (PowerShell) environment. All paths are relative to the repository root.
 
-- **Requisitos mínimos**:
-	- Python 3.10 o 3.11 (se recomienda usar la misma versión durante la reproducción).
-	- Espacio en disco suficiente para los datos y notebooks.
+- **Minimum Requirements**:
+	- Python 3.10 or 3.11 (recommended to use the same version throughout reproduction).
+	- Sufficient disk space for data and notebooks.
 
-- **Paquetes principales** (versión orientativa):
-	- `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `jupyterlab` o `notebook`, `factor_analyzer`, `scipy`
+- **Main Packages** (indicative versions):
+	- `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `jupyterlab` or `notebook`, `factor_analyzer`, `scipy`
 
-- **Pasos para preparar el entorno (PowerShell)**:
-	1. Crear un entorno virtual en la raíz del proyecto:
+- **Steps to Prepare the Environment (PowerShell)**:
+	1. Create a virtual environment at the root of the project:
 
 		 ```powershell
 		 python -m venv .venv
 		 ```
 
-	2. Activar el entorno virtual (PowerShell):
+	2. Activate the virtual environment (PowerShell):
 
 		 ```powershell
 		 .\.venv\Scripts\Activate.ps1
 		 ```
 
-	3. Actualizar pip e instalar dependencias (instalación mínima):
+	3. Update pip and install dependencies (minimal installation):
 
 		 ```powershell
 		 python -m pip install --upgrade pip
 		 pip install pandas numpy scikit-learn matplotlib seaborn jupyterlab factor_analyzer scipy
 		 ```
 
-	4. (Opcional) Si prefieres instalar desde un archivo `requirements.txt`, crea uno y ejecuta:
+	4. (Optional) If you prefer to install from a `requirements.txt` file, create one and run:
 
 		 ```powershell
 		 pip install -r requirements.txt
 		 ```
 
-- **Ejecutar los notebooks (interactivo)**:
-	- Iniciar Jupyter Lab/Notebook desde la raíz del repositorio:
+- **Run Notebooks (Interactive)**:
+	- Start Jupyter Lab/Notebook from the repository root:
 
 		```powershell
 		jupyter lab
-		# o
+		# or
 		jupyter notebook
 		```
 
-	- Abrir el notebook deseado en la interfaz y ejecutar las celdas en orden (recomiendo ejecutar las primeras celdas de setup antes que las de análisis).
+	- Open the desired notebook in the interface and run cells in order (recommended to run setup cells before analysis cells).
 
-- **Ejecutar un notebook de forma no interactiva (reproducible)**:
-	- Para ejecutar un notebook y sobrescribirlo con las salidas ejecutadas:
+- **Run a Notebook Non-Interactively (Reproducible)**:
+	- To execute a notebook and overwrite it with executed outputs:
 
 		```powershell
 		pip install nbconvert
 		jupyter nbconvert --to notebook --execute case-02-discriminant-analysis/notebooks/discriminant_analysis.ipynb --inplace
 		```
 
-- **Rutas de datos**:
-	- Los datos para cada caso están en las carpetas `case-0X-.../data/`. Por ejemplo, el notebook de discriminant analysis carga `../data/credit_risk_data-1.csv` (ruta relativa desde `case-02-discriminant-analysis/notebooks`).
+- **Data Paths**:
+	- Data for each case is in the `case-0X-.../data/` folders. For example, the discriminant analysis notebook loads `../data/credit_risk_data-1.csv` (relative path from `case-02-discriminant-analysis/notebooks`).
 
-- **Notas y recomendaciones**:
-	- Si usas PowerShell y recibes un error de ejecución al activar el venv, ejecuta `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` en una sesión con privilegios adecuados.
+- **Notes and Recommendations**:
+	- If you use PowerShell and receive an execution error when activating the venv, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` in a session with appropriate privileges.
 
-## Estructura del repositorio 
+## Repository Structure 
 mi-portfolio-ma2003b/
 │
 ├── README.md # Descripción general del portfolio
