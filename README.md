@@ -104,49 +104,82 @@ These instructions allow you to reproduce the analyses and run the notebooks in 
 
 ## Repository Structure 
 mi-portfolio-ma2003b/
+
 │
+
 ├── README.md # Descripción general del portfolio
+
 ├── LICENSE # Licencia MIT o similar
+
 ├── .gitignore # Configuración para Python
+
 ├── requirements.txt # Dependencias del proyecto
+
 │
+
 ├── case-01-factor-analysis/
+
 │ ├── README.md # Descripción del caso y hallazgos clave
+
 │ ├── data/
+
 │ │ ├── customer_satisfaction_data.csv
+
 │ │ └── DATA_DICTIONARY.md
+
 │ ├── notebooks/
+
 │ │ └── factor_analysis.ipynb # Notebook mejorado
+
 │ ├── reports/
+
 │ │ ├── executive_summary.pdf
+
 │ │ └── technical_report.pdf
+
 │ ├── src/ # Scripts de Python reutilizables
-(opcional)
-│ │ └── utils.py
-│ └── visualizations/
-│ ├── correlation_heatmap.png
-│ ├── scree_plot.png
-│ └── factor_loadings.png
+
 │
+
 ├── case-02-discriminant-analysis/
+
 │ ├── README.md
+
 │ ├── data/
+
 │ ├── notebooks/
+
 │ ├── reports/
+
 │ └── visualizations/
+
 │
+
 ├── case-03-cluster-analysis/
+
 │ ├── README.md
+
 │ ├── data/
+
 │ ├── notebooks/
+
 │ ├── reports/
+
 │ └── visualizations/
+
 │
+
 ├── portfolio-summary/
+
 │ ├── PORTFOLIO_OVERVIEW.md # Resumen integrador
+
 │ ├── LESSONS_LEARNED.md # Reflexiones críticas
+
 │ └── METHODOLOGY_COMPARISON.md # Comparación de métodos
+
 │
+
 └── presentation/
+
 └── final_portfolio_presentation.pdf
 
