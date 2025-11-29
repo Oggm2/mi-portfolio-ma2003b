@@ -128,6 +128,7 @@ The dataset contains **low missingness (<1%)**, handled with mean imputation usi
 
 ### 4.2 Highlight visualization
 
+![Correlation Factor vs. Outcome](.\images\factors_vs_outcomes.png)
 
 
 ### 4.3 Model performance metrics
